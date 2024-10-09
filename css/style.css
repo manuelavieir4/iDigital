@@ -120,14 +120,13 @@ a{
     position: fixed;
     right: 15px;
     top: 15px;
-    top: 15px;
     z-index: 9998;
     border: 0;
     font-size: 24px;
     transition: all 0.4s;
     outline: none !important;
-    background:rgb(0, 0, 0);
-    color: slateblue;
+    background:slateblue;
+    color: rgb(0, 0, 0);
     width: 40px;
     height: 40px;
     display: inline-flex;
@@ -136,3 +135,27 @@ a{
     border-radius: 50px;
     cursor: pointer;
   }
+
+  .mobile-nav-active{
+    overflow: hidden;
+  }
+  .mobile-nav-active #header{
+    left: 0;
+  }
+  
+
+  /*resolução mobile*/
+    @media(max-width: 1199px)/*resolução até o valor proposto*/{
+      #header{
+        left: -300px;
+      }
+      #main{
+        margin-left: 0;
+      }
+        .container, .container-fluid{
+          padding-left: 12px;
+          padding-right: 12px;
+        }
+
+    }
+    
