@@ -219,7 +219,7 @@ h6 {
 }
 #hero h1{
   margin: 0 0 10px 0;
-  font-size: 64px;/
+  font-size: 64px;
   /* font-weight: ; */
   line-height: 56px;
   color: indigo;
@@ -240,4 +240,75 @@ h6 {
     letter-spacing: 1px;
     border-bottom:  3px solid purple;  
   }
- 
+
+  @media(min-width: 1024px) {
+    #hero{
+      background-attachment: fixed;
+    }
+  }
+  @media(max-width:768){
+      #hero h1{
+        font-size: 28px;
+        line-height: 36px;
+      }
+      #hero h2{
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+      }
+  }
+  /*seções geral*/
+  section{
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  .section-bg{ /*bg*/
+    background: slateblue;
+  }
+  .section-title{
+    padding-bottom: 30px;
+  }
+  .section-title h2{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: darkslateblue;
+    font-family: 0;
+  }
+  .section-title h2::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background:rgb(144, 129, 211);
+    bottom: 0;
+    left: 0;
+  }
+
+  .section-title p{
+    margin-bottom: 0;
+    /*color: ;*/
+    /*font-size: ; */
+    font-family: "work sans";
+
+  }
+
+  /*#about*/
+  .about .content h3{
+    font-weight: 700;
+    font-size: 26px;
+    color: darkslateblue;
+  }
+  .about .content ul{
+    list-style: none;
+    padding: 0;
+  }
+  .about .content ul li{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+
